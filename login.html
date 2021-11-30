@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- firebaseのスクリプト -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="email" placeholder="email" />
+    <input type="password" id="password" placeholder="password" />
+    <input type="button" value="SignUp" onclick="signUp()" />
+    <input type="button" value="SignIn" onclick="signIn()" />
+    <input type="button" value="SignOut" onclick="signOut()" />
+    <p id="log"></p>
+    <p id="state"></p>
+
+    <!-- このファイルに認証用の処理を実装します。 -->
+    <script src="firebase-auth.js"></script>
+</body>
+</html>
